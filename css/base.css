@@ -1,0 +1,43 @@
+body, html {
+    line-height: 1;
+    font-weight: 200;
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', arial, sans-serif;
+    background: #fff;
+    color: #666;
+}
+
+html, body, .container {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #666;
+}
+
+.clearfix {
+    display: inline-block
+}
+
+.clearfix:after {
+    display: block;
+    content: ".";
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+i, em {
+    font-style: normal;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
