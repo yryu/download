@@ -178,10 +178,13 @@ img {
     font-size: 51px;
 }
 
+.download .foot {
+    padding: 0 0.66667rem;
+}
+
 .download .item {
-    display: flex;
-    padding: 0.26667rem 0.66667rem 0;
     font-size: 16px;
+    position: relative;
 }
 
 [data-dpr="2"] .download .item {
@@ -193,19 +196,29 @@ img {
 }
 
 .download .item-hd {
-    flex: 0 0 0.50667rem;
+    position: absolute;
+    top: 0.13333rem;
+    left: 0;
     width: 0.50667rem;
     height: 0.50667rem;
     line-height: 0.50667rem;
     margin-right: 0.26667rem;
     background: #ffcf9c;
     text-align: center;
-    position: relative;
-    top: 0.13333rem;
+}
+
+@media screen and (max-width: 640px) {
+    .download .item-hd {
+        top: 0.18667rem;
+    }
+
+    .download .download-btn {
+        margin: 0.4rem auto 1.6rem;
+    }
 }
 
 .download .item-bd {
-    flex: 1;
+    padding-left: 0.77333rem;
     text-align: justify;
     line-height: 1.8;
 }
